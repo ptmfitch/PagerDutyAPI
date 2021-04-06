@@ -1,0 +1,18 @@
+Setup/Authentication
+- BaseURL uses api.pagerduty.com, not <subdomain>.pagerduty.com
+- Postman automatically adds Authorization header to child endpoints
+
+Team
+- Use keyword argument json={} to format request body correctly
+
+Escalation Policy
+- Response 404 if IDs don't exist or line up correctly
+
+Service
+- Response 400 if service with same name exists already
+
+Contact Details
+- Couldn't add UK phone number without enabling international numbers on my account
+
+Incident Response Workflow
+- API key is generated per integration, doesn't use user API token
